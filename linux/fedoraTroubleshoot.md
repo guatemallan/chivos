@@ -1,3 +1,31 @@
+# instalaciones dnf
+
+## chequear existencia de repo
+
+        dnf repolist | grep mozilla
+
+## firefox
+
+        sudo dnf config-manager addrepo --id=mozilla --set=baseurl=https://packages.mozilla.org/rpm/firefox --set=gpgkey=https://packages.mozilla.org/rpm/firefox/signing-key.gpg --set=gpgcheck=1 --set=repo_gpgcheck=0 --set=priority=10
+
+        sudo dnf makecache --refresh
+
+        sudo dnf install firefox
+
+## keepassxc
+
+        sudo dnf install keepassxc
+
+## ffmpeg
+
+        sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
+
+        sudo dnf config-manager --enable fedora-cisco-openh264
+
+        sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+
+
 # thumbnails
 
 ## No hay thumbnails JPG, PNG
