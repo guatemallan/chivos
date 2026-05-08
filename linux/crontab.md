@@ -12,7 +12,9 @@
 
 ## Comandos
 
-USO                                    |DESCRIPCION
---                                     |--
-`crontab -l > /some/location/filename` |To backup crontab from current user to a file
-`crontab /some/location/filename`      |To restore the crontab of the current user from a file
+USO                                     |DESCRIPCION
+--                                      |--
+`crontab -l > /some/location/filename`  |To backup crontab from current user to a file
+`crontab /some/location/filename`       |To restore the crontab of the current user from a file
+`crontab -l -u root > ./root.crontab`   |To backup crontab from user root
+`crontab -u root ./root.crontab`        |To restore the crontab of the user root from the file "root.crontab" on the current directory
