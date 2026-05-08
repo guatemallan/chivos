@@ -4,9 +4,9 @@
 
  ## Qué es un chivo?
  
-Se podría traducir del anglicismo **cheat-sheet**. Según el diccionario de americanismos de la RAE:
+Se podría traducir del anglicismo *cheat-sheet*. Según el diccionario de americanismos de la RAE:
 
-[Chivo](https://www.asale.org/damer/chivo)
+[Chivo](https://www.asale.org/damer/chivo)  
 : V.	1.	m. Gu, Cu, RD, PR. Entre estudiantes, escrito que se lleva disimuladamente para copiarlo en un examen. est.
 
 ## Chivos
