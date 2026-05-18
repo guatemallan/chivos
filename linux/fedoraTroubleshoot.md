@@ -1,3 +1,19 @@
+## iniciar en resuce mode
+
+1. Al iniciar el sistema, en la pantalla de GRUB/GRUB2 seleccionar con la flecha la opcion de boot en la que se desea iniciar
+2. Presionar la tecla *e* para editar la entrada
+3. Buscar la linea que empieza con *linux*/*linux16*/*linuxefi* y seleccionarla con las flechas arriba y abajo
+4. Ir al final de la linea, agregar un espacion y anadir lo siguiente: `rw init=/bin/bash`
+5. Presionar `ctrl+x` o `F10` para iniciar. 
+
+## resetear el password de root
+
+1. inicar en rescue mode
+2. correr el commando `passwd`
+3. reiniciar con el comando /sbin/reboot -f
+4. seguir los pasos de 1 al 3 de *iniciar en rescue mode*
+5. agregar al final del comando `autorelabel=1`
+
 # instalaciones dnf
 
 ## chequear existencia de repo
