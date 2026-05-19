@@ -25,6 +25,11 @@ Se podría traducir del anglicismo *cheat-sheet*. Según el diccionario de ameri
     10. [Otros](/herramientas/markdown-cheat-sheet.md#emoji)
 2. Terminal Linux
     1. [Comandos](linux/commands.md)
+        1. [chmod](/linux/commands.md#chmod)
+        2. [find](/linux/commands.md#find)
+        3. [history](/linux/commands.md#history)
+        4. [reverse search](/linux/commands.md#reverse-search)
+        5. [uptime](/linux/commands.md#uptime)
     2. [Crontab](linux/crontab.md)
     3. [Vi](/linux/vi.md)
     4. [Trobleshooting Fedora](/linux/fedoraTroubleshoot.md)
