@@ -15,14 +15,14 @@ will replace the original file with the new one (Command Stacking).
 > - Exécution (x) : Permet d'exécuter le fichier comme un programme.
 > - (*-*) : pas de permissions
 > ![Interpreter les permissions](/linux/commands.chmod.01.png)
-
+>
 >**Mode numérique**: 
 > - 4 : lecture
 > - 2 : écriture
 > - 1 : exécution
 > - 0 : aucun
 > ![mode numérique](/linux/commands.chmod.02.png)
-
+>
 > `chmod u+r fichier.txt`
 Ajoute la permission de lecture pour le propriétaire.
 > `chmod g-w fichier.txt`
@@ -40,7 +40,7 @@ Disc usage information
 The find command in Unix is used to search for files and directories based on specific criteria such as name, type, size, or modification date. It recursively scans the specified directory and its subdirectories to locate matching files.
 
 ## grep
-> `grep miFile`
+> `grep text`
 Returns every line from a string that contains the text passed as parameter.
 
 ## History
@@ -88,12 +88,3 @@ Replaces every occurrence of Mounted on for Mounted_on on the file ‘test’ an
 ## Uptime
 > `uptime`
 You can use the uptime command in Unix to check how long the machine has been running. It will display the current time, how long the system has been up, the number of users logged in, and the system load averages.
-
- 
- 
-ls &
-
-
-
-
-
