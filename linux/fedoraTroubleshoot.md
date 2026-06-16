@@ -11,8 +11,15 @@
 1. inicar en rescue mode
 2. correr el commando `passwd`
 3. reiniciar con el comando /sbin/reboot -f
-4. seguir los pasos de 1 al 3 de *iniciar en rescue mode*
+4. seguir los pasos de 1 al 3 de [rescue mode](#iniciar-en-resuce-mode)
 5. agregar al final del comando `autorelabel=1`
+
+# GRUB mostrar comandos
+
+1. hacer los pasos del 1 al 3 de [rescue mode](#iniciar-en-resuce-mode)
+2. ir al final de la linea y hacer lo siguiente:
+    1. quitar el comando `quiet`
+    2. agregar `plymouth.enable=0`
 
 # instalaciones dnf
 
