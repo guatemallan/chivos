@@ -4,10 +4,10 @@
 
  ## Qué es un chivo?
  
-Se podría traducir del anglicismo *cheat-sheet*. Según el diccionario de americanismos de la RAE:
+Se podría traducir al del anglicismo *cheat-sheet*. Según el diccionario de americanismos de la RAE:
 
-[Chivo](https://www.asale.org/damer/chivo)  
-: V.	1.	m. Gu, Cu, RD, PR. Entre estudiantes, escrito que se lleva disimuladamente para copiarlo en un examen. est.
+> [Chivo](https://www.asale.org/damer/chivo)  
+V.	1.	m. Gu, Cu, RD, PR. Entre estudiantes, escrito que se lleva disimuladamente para copiarlo en un examen. est.
 
 ## Chivos
 
@@ -25,6 +25,23 @@ Se podría traducir del anglicismo *cheat-sheet*. Según el diccionario de ameri
     10. [Otros](/herramientas/markdown-cheat-sheet.md#emoji)
 2. Terminal Linux
     1. [Comandos](linux/commands.md)
-    2. [Crontab](linux/crontab.md)
-    3. [Vi](/linux/vi.md)
+        - [| pipe](/linux/commands.md#-pipe)
+        - [cat](/linux/commands.md#cat)
+        - [chmod](/linux/commands.md#chmod)
+        - [df](/linux/commands.md#df)
+        - [find](/linux/commands.md#find)
+        - [grep](/linux/commands.md#grep)
+        - [history](/linux/commands.md#history)
+        - [ls](/linux/commands.md#ls)
+        - [man](/linux/commands.md#man)
+        - [Memory Usage](/linux/commands.md#memory-usage-information)
+        - [nohup](/linux/commands.md#nohup)
+        - [ps](/linux/commands.md#ps)
+        - [reverse search](/linux/commands.md#reverse-search)
+        - [sed](/linux/commands.md#sed)
+        - [sleep](/linux/commands.md#sleep)
+        - [sudo](/linux/commands.md#sudo)
+        - [uptime](/linux/commands.md#uptime)
+    2. [crontab](linux/crontab.md)
+    3. [vi](/linux/vi.md)
     4. [Trobleshooting Fedora](/linux/fedoraTroubleshoot.md)
