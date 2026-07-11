@@ -68,12 +68,27 @@ Awk gets columns 6 trough 9 and puts them in a file called rob.
 ## nohup
 > Runs your command in the background.
 
+## NPM
+> `npm` est le gestionnaire de paquets par défaut pour l'environnement d'exécution JavaScript Node.js. Il permet de gérer les dépendances des projets et d'accéder à un vaste registre de package
+
+### npm list
+> `npm list -g --depth=0`
+Lists NPM installed packages. `-g` indicates the command to search in all users's directories, without it only searches in current. `--depth=0` indicates the command to not include dependencies. 
+
 ## ps
 > Lists process running on the box
 
 ## Reverse search
 > `ctrl+r`
 Type a search term and you should see the last command issued that contained this term. For example we added the search term sudo to show the previous commands issued with sudo privileges. 
+
+## RPM
+> RPM, the Red Hat Package Manager, is used to manage packages on Red Hat-based distributions like CentOS and Fedora. It’s a powerful tool for listing and querying installed software with detailed information.
+
+### rpm qa
+> `rpm qa`
+`rpm qa | grep node`
+Queries the installed packages.
 
 ## sed
 > `sed -e ‘s/Mounted on/Mounted_on/g’ test > test.tmp`
@@ -88,3 +103,7 @@ Replaces every occurrence of Mounted on for Mounted_on on the file ‘test’ an
 ## Uptime
 > `uptime`
 You can use the uptime command in Unix to check how long the machine has been running. It will display the current time, how long the system has been up, the number of users logged in, and the system load averages.
+
+## Which
+> `which node`
+This command searches the directories specified by the PATH environment variable and displays the full path of the executable file associated with the given command.
