@@ -100,6 +100,15 @@ Replaces every occurrence of Mounted on for Mounted_on on the file ‘test’ an
 ## sudo
 > Use permissions from a higher user
 
+## tail
+> Mostrar las ultimas lineas de un archivo 
+> `tail ./myFile.txt`
+> `tail -100 ./myFile.txt` en versiones anteriores, muestra las ultimas 100 lineas. La sintaxis actual es `tail -n 100 ./myFile.txt`.
+> `tail +100 ./myFile.txt` muestra las lineas desde la linea 100 hasta el final del archivo. La sintaxis actual es `tail +n 100 ./myFile.txt`.
+> `tail -f ./myFile.txt` muestra las ultimas 10 lineas y se mantiene monitoreando el archivo, mostrando lineas mientras se agregan.
+> `tail -v ./myFile.txt` muestra las ultimas 10 lineas del archivo precedido por su nombre. 
+> `tail ./myFile.txt ./myFile2.txt` muestra las ultimas 10 lineas de cada archivo. 
+
 ## Uptime
 > `uptime`
 You can use the uptime command in Unix to check how long the machine has been running. It will display the current time, how long the system has been up, the number of users logged in, and the system load averages.
