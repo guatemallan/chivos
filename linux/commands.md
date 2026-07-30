@@ -113,6 +113,9 @@ Replaces every occurrence of Mounted on for Mounted_on on the file ‘test’ an
 > `uptime`
 You can use the uptime command in Unix to check how long the machine has been running. It will display the current time, how long the system has been up, the number of users logged in, and the system load averages.
 
+## Uname
+> `uname -a` Shows OS information.
+
 ## Which
 > `which node`
 This command searches the directories specified by the PATH environment variable and displays the full path of the executable file associated with the given command.
