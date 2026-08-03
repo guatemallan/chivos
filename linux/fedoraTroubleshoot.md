@@ -1,3 +1,17 @@
+# por qué fedora?
+
+- Es un proyecto patrocinado por redhat.
+- Gnome casi vanilla. Muy buena integración con Gnome.
+- Incluye las novedades más actuales en cuanto a software y compatibilidad en hardware.
+- Un sistema limpio, funcional desde la instalación, listo para empezar a experimentar y trabajar.
+
+# por qué no debian?
+
+- Debian es un proyecto de comunidad. 
+- Gnome casi vanilla.
+- La versión estable no prioriza las últimas versiones de software en favor de la estabilidad. Algunos paquetes de software pueden estar muy desactualizados en comparación con otras distribuciones. 
+- En algunas ocasiones, hacer que algún hardware funcione se deben hacer ajustes intermedios y avanzados en el sistema (por ejemplo, haciendo que GPUS de NVidia funcionen).
+
 # iniciar en resuce mode
 
 1. Al iniciar el sistema, en la pantalla de GRUB/GRUB2 seleccionar con la flecha la opcion de boot en la que se desea iniciar
@@ -8,7 +22,7 @@
 
 # resetear el password de root
 
-1. inicar en rescue mode
+1. Hacer los pasos para [inicar en rescue mode](#iniciar-en-resuce-mode)
 2. correr el commando `passwd`
 3. reiniciar con el comando /sbin/reboot -f
 4. seguir los pasos de 1 al 3 de [rescue mode](#iniciar-en-resuce-mode)
@@ -99,3 +113,32 @@ Usar exiv2raw. Archivos soportados:
 
 `sudo rm ~/.cache/thumbnails/*`
 `sudo rm ~/.cache/thumbnails/large/*`
+
+## Filesystem Not Using All Available Space
+
+### Possible Reasons for Disk Space Discrepancy
+
+The issue may arise if the filesystem is not utilizing the entire space allocated to the partition. This can happen for several reasons, including:
+
+    Filesystem Configuration: The filesystem might be configured to reserve a portion of the disk space for system use.
+    Partition Size: The partition may not be correctly sized or formatted to use all available space.
+
+Steps to Diagnose and Fix
+
+    Check Partition Size: Use the command df -h to see how much space is being reported and how much is actually used.
+
+    Resize Filesystem: If the partition is correctly sized but the filesystem is not using all the space, you may need to resize it. You can use the following commands:
+        To check the filesystem: tune2fs -l /dev/sdX1 (replace /dev/sdX1 with your actual partition).
+        To resize the filesystem: resize2fs /dev/sdX1.
+
+    Check for Reserved Space: If the filesystem has reserved space, you can adjust it using:
+        tune2fs -m 0 /dev/sdX1 to remove the reserved space.
+
+Example of Checking Disk Space
+Command	Description
+df -h	Displays disk space usage for all mounted filesystems.
+tune2fs -l /dev/sdX1	Lists filesystem information, including size and reserved space.
+resize2fs /dev/sdX1	Resizes the filesystem to use all available space.
+
+By following these steps, you should be able to identify and resolve the issue with your home partition's disk space detection.
+Arch Linux forum.level1techs.com
